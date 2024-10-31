@@ -34,6 +34,7 @@ object DatabaseFactory {
         config.jdbcUrl = "jdbc:mysql://avnadmin:AVNS_iYuyvX01L8U5k-mykrK@mysql-2fd66379-mohsenaliakbari-84ab.d.aivencloud.com:22428/defaultdb?ssl-mode=REQUIRED"
 //        config.username = "root"
 //        config.password = ""
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver"); //alternative is Class.forName("com.mysql.cj.jdbc.Driver")
 
         config.maximumPoolSize = 3
         config.isAutoCommit = false
