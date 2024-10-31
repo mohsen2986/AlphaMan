@@ -8,7 +8,11 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    configureSecurity()
+    DatabaseFactory.init()
+    val userService = UserService()
+
+//    configureSecurity()
     configureSerialization()
-    configureRouting()
+    configureRouting(userService)
+
 }
