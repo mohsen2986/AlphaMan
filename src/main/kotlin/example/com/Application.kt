@@ -1,6 +1,8 @@
 package example.com
 
+import example.com.db.DatabaseFactory
 import example.com.plugins.*
+import example.com.service.UserService
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
