@@ -1,4 +1,4 @@
-package example.com
+package example.com.service
 
 import example.com.model.User
 import example.com.model.Users

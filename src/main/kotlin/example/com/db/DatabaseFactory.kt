@@ -1,10 +1,10 @@
-package example.com
+package example.com.db
 
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.transactions.transaction
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
-import example.com.model.Users import org.jetbrains.exposed.sql.transactions.transaction
+import example.com.model.Users
 import org.jetbrains.exposed.sql.SchemaUtils.create
 import org.jetbrains.exposed.sql.insert
 
