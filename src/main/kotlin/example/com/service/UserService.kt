@@ -6,7 +6,7 @@ import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransaction
 
-class UserService {
+class  UserService {
 
     suspend fun getAllUsers() :List<User> = newSuspendedTransaction{
         Users.selectAll().map { toUsers(it) }

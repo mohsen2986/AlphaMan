@@ -12,9 +12,10 @@ fun main(args: Array<String>) {
 fun Application.module() {
     DatabaseFactory.init()
     val userService = UserService()
+    val jwtService = JWTService(userService)
 
-//    configureSecurity()
+    configureSecurity(userService , jwtService)
     configureSerialization()
-    configureRouting(userService)
+    configureRouting(userService , jwtService)
 
 }
